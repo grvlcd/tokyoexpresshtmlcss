@@ -1,0 +1,195 @@
+body,
+html {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+}
+nav ul li a {
+  font-size: 1.3rem;
+}
+
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.34635861180409666) 100%,
+      rgba(0, 212, 255, 0.22871155298056722) 100%
+    ),
+    url("../images/pexels-photo-3408354.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+
+.hero-text button {
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1rem;
+  background-color: rgb(235, 232, 232);
+  border-radius: 0.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.activity {
+  flex: 1 1 35rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.activity-text {
+  margin-top: -0.5rem;
+  background-color: rgb(245, 241, 241);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.activity-text h4 {
+  flex: 6 1 5rem;
+  font-size: 1rem;
+}
+
+.activity-text button {
+  flex: 1 1 5rem;
+  background-color: rgb(235, 232, 232);
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.activity img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  height: 45rem;
+}
+
+.plans {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.plan {
+  padding: 5rem;
+  flex: 1 1 10rem;
+  margin: auto;
+}
+
+.plan-image {
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(245, 241, 241);
+}
+
+.plan-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50%;
+}
+
+.plan h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.plan p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.book-now {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/pexels-photo-3408354.jpg");
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.34635861180409666) 100%,
+    rgba(254, 254, 254, 0.5536415249693627) 100%
+  );
+  width: 50%;
+  padding: 3rem;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 100%;
+  }
+}
+
+form .mb-3 label {
+  color: white;
+}
+
+footer a,
+p {
+  font-size: 1.2rem;
+}
+
+footer h5 {
+  font-size: 2rem;
+}
